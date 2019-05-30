@@ -1,5 +1,4 @@
 node{
-
 stage('SCM Checkout'){
 git 'https://github.com/upretiramesh78/spring-boot-hello-world-example'
 }
