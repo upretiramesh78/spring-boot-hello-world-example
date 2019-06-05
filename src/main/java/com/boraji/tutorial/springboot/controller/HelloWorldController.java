@@ -1,3 +1,4 @@
+
 package com.boraji.tutorial.springboot.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,3 +11,5 @@ public class HelloWorldController {
       return "Hello Spring Boot HHHHHH Jai Hanuman!!";
    }
 }
+
+
