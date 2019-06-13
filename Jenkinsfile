@@ -7,7 +7,7 @@ stage('compile-package') {
  def mvnHome= tool name: 'mavenNw', type: 'maven'
  sh "${mvnHome}/bin/mvn -s /usr/local/apache-maven-3.5.4/conf/settings.xml install"
 }
-   stage ("${deployenv} - Start custom & infra"){
+   stage ('Server Stop and start'){
     sh "/Users/rameshchandra/Downloads/apache_tomcat/bin/shutdown.sh"
     sh "/Users/rameshchandra/Downloads/apache_tomcat/bin/./catalina.sh run"
     sleep(time:60,unit:"SECONDS")  
