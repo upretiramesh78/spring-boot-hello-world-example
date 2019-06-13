@@ -19,7 +19,6 @@ stage('compile-package') {
 }
    stage ('Server Stop and start'){
     
-   #cp  "/Users/Shared/Jenkins/Home/workspace/testpipeline/target/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar /Users/rameshchandra/Downloads/apache_tomcat/webapps/"
-      sh 'echo Success'
+   sh 'echo Success'
   }
 }
