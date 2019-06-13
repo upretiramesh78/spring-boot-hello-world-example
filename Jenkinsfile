@@ -19,7 +19,7 @@ stage('compile-package') {
 }
    stage ('Server Stop and start'){
     sudo apt-get install ssh
-    sh "ssh ${user}@${host}  'cp ${SRC_DIR}/target/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar ${DEST_DIR}/webapps/'"
+    sh "cp ${SRC_DIR}/target/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar ${DEST_DIR}/webapps/"
       sh 'echo Success'
   }
 }
