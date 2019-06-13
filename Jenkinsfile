@@ -8,8 +8,7 @@ stage('compile-package') {
  sh "${mvnHome}/bin/mvn -s /usr/local/apache-maven-3.5.4/conf/settings.xml install"
 }
    stage ('Server Stop and start'){
-    sh "/Users/rameshchandra/Downloads/apache_tomcat/bin/shutdown.sh"
-    sh "/Users/rameshchandra/Downloads/apache_tomcat/bin/./catalina.sh run"
+    sh "cp /Users/Shared/Jenkins/Home/workspace/testpipeline/target/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar  /Users/rameshchandra/Downloads/apache_tomcat/custom/webapps/"
     sleep(time:60,unit:"SECONDS")  
   }
 }
