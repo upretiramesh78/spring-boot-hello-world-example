@@ -31,7 +31,7 @@ stage('compile-package') {
 
     echo "Copying files from $sourConfigFolder"
     cp -r $SRC_DIR $DEST_DIR
-    nohup nice java -jar $destFile --server.port=$port $properties $> $dstLogFile 2>&1 &
+    #nohup nice java -jar $destFile --server.port=$port $properties $> $dstLogFile 2>&1 &
 
    sh 'echo Success'
   }
