@@ -23,8 +23,7 @@ stage('compile-package') {
 
     echo "Copying files from $sourConfigFolder"
     
-    #nohup nice java -jar $destFile --server.port=$port $properties $> $dstLogFile 2>&1 &
-
+     
    
    sh 'echo Success'
   }
