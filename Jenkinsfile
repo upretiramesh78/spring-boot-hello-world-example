@@ -30,7 +30,7 @@ stage('compile-package') {
    cp $SRC_DIR $DEST_DIR
 
     echo "Copying files from $sourConfigFolder"
-    cp -r $SRC_DIR $DEST_DIR
+    #cp -r $SRC_DIR $DEST_DIR
     #nohup nice java -jar $destFile --server.port=$port $properties $> $dstLogFile 2>&1 &
 
    
