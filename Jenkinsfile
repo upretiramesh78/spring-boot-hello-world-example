@@ -27,12 +27,7 @@ stage('compile-package') {
    stage ('Server Stop and start'){
     chmod 777 $DEST_DIR
     echo "Copying files from $sourFile"
-    cp $SRC_DIR $DEST_DIR
-
-    echo "Copying files from $sourConfigFolder"
-    cp -r $SRC_DIR $DEST_DIR
-    #nohup nice java -jar $destFile --server.port=$port $properties $> $dstLogFile 2>&1 &
-
+   
    sh 'echo Success'
   }
 }
