@@ -6,14 +6,6 @@ env.port = "8081"
 
 env.SRC_DIR = '/Users/Shared/Jenkins/Home/workspace/testpipeline/'
 env.DEST_DIR = '/Users/rameshchandra/Downloads/apache_tomcat/'
-
-
-
-
-
-
-
-
 node{
 stage('SCM Checkout'){
 git 'https://github.com/upretiramesh78/spring-boot-hello-world-example'
@@ -30,7 +22,7 @@ stage('compile-package') {
    cp $SRC_DIR $DEST_DIR
 
     echo "Copying files from $sourConfigFolder"
-    #cp -r $SRC_DIR $DEST_DIR
+    
     #nohup nice java -jar $destFile --server.port=$port $properties $> $dstLogFile 2>&1 &
 
    
