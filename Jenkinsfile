@@ -9,8 +9,7 @@ env.DEST_DIR = '/Users/rameshchandra/Downloads/apache_tomcat/'
 
 
 
-env.sourFile=$SRC_DIR/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar
-env.destFile=$DEST_DIR/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar
+
 
 
 
