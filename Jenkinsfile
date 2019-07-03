@@ -17,7 +17,7 @@ stage('compile-package') {
 }
    stage ('Server Stop and start'){
      chmod 777 $DEST_DIR
-     sh "cp $SRC_DIR/*.jar $DEST_DIR/"
+     sh "cp $SRC_DIR/*.jar $DEST_DIR/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar"
    
    sh 'echo Success'
   }
