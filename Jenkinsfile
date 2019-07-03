@@ -17,7 +17,7 @@ stage('compile-package') {
 }
    stage ('Server Stop and start'){
    sh "chmod 777 $DEST_DIR"
-   sh "cp $SRC_DIR/*.jar $DEST_DIR"
+   
    sh 'echo Success'
   }
 }
