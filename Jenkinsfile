@@ -4,8 +4,8 @@ env.user = 'rameshchandra'
 env.host = "localhost"
 env.port = "8081"
 
-env.SRC_DIR = '/Users/Shared/Jenkins/Home/workspace/testpipeline/'
-env.DEST_DIR = '/Users/rameshchandra/Downloads/apache_tomcat/'
+env.SRC_DIR = '/Users/Shared/Jenkins/Home/workspace/target/'
+env.DEST_DIR = '/Users/rameshchandra/Downloads/apache_tomcat/webapps/'
 node{
 stage('SCM Checkout'){
 git 'https://github.com/upretiramesh78/spring-boot-hello-world-example'
@@ -17,7 +17,7 @@ stage('compile-package') {
 }
    stage ('Server Stop and start'){
     
-     
+     sh "cp $SRC_DIR/*.jar $DEST_DIR/"
    
    sh 'echo Success'
   }
